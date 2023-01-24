@@ -6,49 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
     <title>TripAdvisor</title>
   </head>
   <body>
     <header>
-      <h1><span>Explorez</span> Paris</h1>
-      <nav>
-        <div class="hotels" id="hotels-page">
-          <p>Hôtels</p>
-          <img src="" alt="" />
+      <img src="./assets/img/Tripadvisor.svg" alt="le logo de trip advisor" />
+      <nav class="header-icons">
+        <div>
+          <i></i>
+          <p>Avis</p>
         </div>
-
-        <div class="holiday-rentals" id="holiday-rentals-link">
-          <p>Locations de vacances</p>
-          <img src="" alt="" />
+        <div class="header-icons">
+          <i></i>
+          <p>Alertes</p>
         </div>
-
-        <div class="activities" id="activities-link">
-          <p>Activités</p>
-          <img src="" alt="" />
+        <div class="header-icons">
+          <i></i>
+          <p>Favoris</p>
         </div>
-
-        <div class="restaurants" id="restaurants-link">
-          <p>Restaurants</p>
-          <img src="" alt="" />
-        </div>
-
-        <div class="forum" id="forum-link">
-          <p>Forum de Voyages</p>
-          <img src="" alt="" />
-        </div>
-
-        <div class="flights" id="flights-link">
-          <p>Vols</p>
-          <img src="" alt="" />
-        </div>
-
-        <div class="more" id="more-link">
-          <p>Plus</p>
-          <img src="" alt="" />
-        </div>
+        <button>Connectez-vous</button>
       </nav>
     </header>
     <main>
+      <div class="exploration">
+        <h1><span>Explorez</span> Paris</h1>
+        <nav class="nav-blocs">
+          <div class="hotels" id="hotels-page">
+            <p>Hôtels</p>
+            <img src="" alt="" />
+          </div>
+
+          <div class="holiday-rentals" id="holiday-rentals-link">
+            <p>Locations de vacances</p>
+            <img src="" alt="" />
+          </div>
+
+          <div class="activities" id="activities-link">
+            <p>Activités</p>
+            <img src="" alt="" />
+          </div>
+
+          <div class="restaurants" id="restaurants-link">
+            <p>Restaurants</p>
+            <img src="" alt="" />
+          </div>
+
+          <div class="forum" id="forum-link">
+            <p>Forum de Voyages</p>
+            <img src="" alt="" />
+          </div>
+
+          <div class="flights" id="flights-link">
+            <p>Vols</p>
+            <img src="" alt="" />
+          </div>
+
+          <div class="more" id="more-link">
+            <p>Plus</p>
+            <img src="" alt="" />
+          </div>
+        </nav>
+      </div>
       <section class="pictures">
         <img src="" alt="" />
         <img src="" alt="" />
@@ -78,7 +97,7 @@
         </div>
         <div class="start-journey">
           <div class="call-to-action">
-            <h2>Paris : commencez à organiser !</h2>
+            <h3>Paris : commencez à organiser !</h3>
             <p>
               Créez un voyage pour enregistrer et organiser toutes vos idées et
               les visualiser sur une carte.
