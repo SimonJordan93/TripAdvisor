@@ -2,17 +2,46 @@
 /* GENERAL */
 /* ---------------------- */
 
-/* ---------------------- */
-/* BODY */
-/* ---------------------- */
-
 body {
-  background-color: #efefef;
+  background-color: #ffffff;
+  width: 1184px;
+  padding: 0 24px;
+  margin: 0 auto;
+  color: black;
+  font-family: "TS-Reg";
 }
 
 /* ---------------------- */
 /* HEADER */
 /* ---------------------- */
+
+header {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .logo {
+  width: 188px;
+}
+
+.header-icons {
+  border: 1px solid black;
+  display: flex;
+  align-content: center;
+}
+
+.header-icons a {
+  border: 1px solid black;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+}
+
+.header-icons a i {
+  width: 50px;
+}
 
 /* ---------*/
 /* Navigation */
