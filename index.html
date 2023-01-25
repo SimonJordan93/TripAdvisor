@@ -7,124 +7,137 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
-    <link
-      rel="stylesheet"
-      href="https://kit.fontawesome.com/670b691009.css"
+    <script
+      src="https://kit.fontawesome.com/670b691009.js"
       crossorigin="anonymous"
-    />
+    ></script>
     <title>TripAdvisor</title>
   </head>
   <body>
     <header>
-      <img
-        class="logo"
-        src="./assets/img/Tripadvisor.svg"
-        alt="le logo de trip advisor"
-      />
-      <nav class="header-icons">
-        <a href="">
-          <i class="fa-solid fa-pen"></i>
-          <p>Avis</p>
-        </a>
-        <a href="">
-          <i class="fa-regular fa-heart"></i>
-          <p>Voyages</p>
-        </a>
-        <a href="">
-          <i class="fa-regular fa-bell"></i>
-          <p>Alertes</p>
-        </a>
-        <a href="">
-          <i></i>
-          <p>Favoris</p>
-        </a>
-        <button>Connectez-vous</button>
-        <a href="">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <p>Panier</p>
-        </a>
-      </nav>
-    </header>
-    <main>
-      <div class="exploration">
-        <h1><span>Explorez</span> Paris</h1>
-        <nav class="nav-blocs">
-          <div class="hotels" id="hotels-page">
-            <p>Hôtels</p>
-            <img src="" alt="" />
-          </div>
-
-          <div class="holiday-rentals" id="holiday-rentals-link">
-            <p>Locations de vacances</p>
-            <img src="" alt="" />
-          </div>
-
-          <div class="activities" id="activities-link">
-            <p>Activités</p>
-            <img src="" alt="" />
-          </div>
-
-          <div class="restaurants" id="restaurants-link">
-            <p>Restaurants</p>
-            <img src="" alt="" />
-          </div>
-
-          <div class="forum" id="forum-link">
-            <p>Forum de Voyages</p>
-            <img src="" alt="" />
-          </div>
-
-          <div class="flights" id="flights-link">
-            <p>Vols</p>
-            <img src="" alt="" />
-          </div>
-
-          <div class="more" id="more-link">
-            <p>Plus</p>
-            <img src="" alt="" />
-          </div>
+      <div class="container">
+        <img src="./assets/img/Tripadvisor.svg" alt="logo" />
+        <nav>
+          <a href="#"><i class="fa-solid fa-pen"></i> <span>Avis</span> </a>
+          <a href="#"
+            ><i class="fa-regular fa-heart"></i> <span>Voyages</span></a
+          >
+          <a href="#"
+            ><i class="fa-regular fa-bell"></i> <span>Alertes</span></a
+          >
+          <button>Connectez-vous</button>
+          <a href="#"
+            ><i class="fa-solid fa-cart-shopping"></i> <span>Panier</span></a
+          >
         </nav>
       </div>
-      <section class="pictures">
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-      </section>
-      <nav class="location">
-        <a href="">Europe</a>
-        <img src="" alt="" />
-        <a href="">France</a>
-        <img src="" alt="" />
-        <a href="">Île-de-France</a>
-        <img src="" alt="" />
-        <a href="">Paris</a>
-      </nav>
-      <section class="information">
-        <div class="about-text">
-          <h2>La Ville Lumière éblouit en tous points</h2>
-          <p>
-            Aucun autre endroit au monde ne fait autant rêver que Paris. La
-            ville séduit par son art, son architecture, sa culture et sa
-            cuisine, mais il y a aussi des merveilles plus discrètes qui
-            n'attendent qu'à être explorées : les ruelles pavées pittoresques,
-            les pâtisseries au coin de la rue et les petits bistrots douillets
-            qui vous invitent à boire un verre de beaujolais. Préparez-vous à
-            vous approprier Paris.
-          </p>
-        </div>
-        <div class="start-journey">
-          <div class="call-to-action">
-            <h3>Paris : commencez à organiser !</h3>
-            <p>
-              Créez un voyage pour enregistrer et organiser toutes vos idées et
-              les visualiser sur une carte.
-            </p>
-            <button>Créez un voyage</button>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1><span>Explorez</span> Paris</h1>
+        <p>
+          Les revenus influencent le choix des expériences présentées sur cette
+          page : en savoir plus.
+        </p>
+
+        <nav class="menu">
+          <a href="#"> <span>Hôtels</span><i class="fa-solid fa-bed"></i></a>
+          <a href="#">
+            <span>Location de vacances</span><i class="fa-solid fa-house"></i
+          ></a>
+          <a href="#">
+            <span>Activités</span><i class="fa-solid fa-ticket"></i
+          ></a>
+          <a href="#">
+            <span>Restaurants</span><i class="fa-solid fa-utensils"></i
+          ></a>
+          <a href="#">
+            <span>Forum de voyage</span><i class="fa-regular fa-comments"></i
+          ></a>
+          <a href="#">
+            <span> Plus</span><i class="fa-solid fa-ellipsis"></i
+          ></a>
+        </nav>
+
+        <section class="imagesBloc">
+          <div class="col1">
+            <img src="./assets/img/left-pic.jpg" alt="Quai de Paris" />
           </div>
-          <img src="" alt="" />
+          <div class="col2">
+            <div>
+              <img
+                src="./assets/img/right-top-pic.jpg"
+                alt="Deux personnes sur une moto"
+              />
+            </div>
+            <div>
+              <img src="./assets/img/right-bottom-pic.jpg" alt="Tour Eiffel" />
+            </div>
+          </div>
+        </section>
+        <div class="location">
+          <div class="breadcrumbs">
+            <a href="">Europe</a><i class="fa-solid fa-chevron-right"></i
+            ><a href="">France</a><i class="fa-solid fa-chevron-right"></i
+            ><a href="">Île-de-France</a
+            ><i class="fa-solid fa-chevron-right"></i><a href="">Paris</a>
+          </div>
+          <div class="visitParis">
+            <span>Visiter : Paris</span>
+          </div>
         </div>
-      </section>
+        <section class="pitch">
+          <div class="information">
+            <h2>La Ville Lumière éblouit en tous points</h2>
+            <p>
+              Aucun autre endroit au monde ne fait autant rêver que Paris. La
+              ville séduit par son art, son architecture, sa culture et sa
+              cuisine, mais il y a aussi des merveilles plus discrètes qui
+              n'attendent qu'à être explorées : les ruelles pavées pittoresques,
+              les pâtisseries au coin de la rue et les petits bistrots douillets
+              qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+              vous approprier Paris.
+            </p>
+          </div>
+          <div class="callToAction">
+            <div class="box">
+              <div class="box-top">
+                <h3>Paris : commencez à organiser !</h3>
+                <p>
+                  Créez un voyage pour enregistrer et organiser toutes vos idées
+                  et les visualiser sur une carte.
+                </p>
+                <button>Créez un voyage</button>
+              </div>
+              <div class="box-bottom">
+                <img src="./assets/img/maps_cnuhsr.png" alt="map" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="unmissables">
+          <h2>Paris : les immanquables</h2>
+          <div class="se-divertir">
+            <div class="text">
+              <h4>Se divertir</h4>
+              <p>
+                Des lieux à voir, des rues à explorer et des expériences
+                emblématiques à Paris.
+              </p>
+              <span>
+                <a href="#">Tout afficher</a>
+              </span>
+            </div>
+            <div class="carrousel">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer></footer>
   </body>
 </html>

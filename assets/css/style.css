@@ -2,75 +2,313 @@
 /* GENERAL */
 /* ---------------------- */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #ffffff;
-  width: 1184px;
-  padding: 0 24px;
+  font-family: TS-Reg, sans-serif;
+}
+
+.container {
+  width: 1135px;
   margin: 0 auto;
-  color: black;
-  font-family: "TS-Reg";
+  /* border: 1px solid black; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 54px;
+  font-family: TS-Med, sans-serif;
+  margin: 20px 0 10px 0;
+  font-weight: bolder;
+}
+h1 span {
+  color: #ff5d5d;
+}
+
+h2 {
+  font-size: 28px;
+  font-family: TS-Med, sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 28px;
+  font-family: TS-Med, sans-serif;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: TS-Med, sans-serif;
 }
 
 /* ---------------------- */
 /* HEADER */
 /* ---------------------- */
-
 header {
-  border: 1px solid black;
+  height: 60px;
+  /* border: 1px solid red; */
+}
+
+header .container {
   display: flex;
+  height: 100%;
   justify-content: space-between;
 }
 
-header .logo {
-  width: 188px;
+header img {
+  width: 190px;
 }
 
-.header-icons {
-  border: 1px solid black;
+header nav {
+  /* border: 1px solid green; */
   display: flex;
-  align-content: center;
-}
-
-.header-icons a {
-  border: 1px solid black;
-  display: flex;
-  text-decoration: none;
-  color: black;
   align-items: center;
+  gap: 20px;
 }
 
-.header-icons a i {
-  width: 50px;
+header i {
+  font-size: 18px;
+}
+
+header button {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: black;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 20px;
+  border: none;
+}
+
+header button:hover {
+  cursor: pointer;
+}
+
+header a {
+  /* border: 1px solid black; */
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+header a:hover {
+  background-color: rgb(233, 233, 233);
 }
 
 /* ---------*/
-/* Navigation */
+/* Main */
 /* -------*/
+h1 + p {
+  font-size: 14px;
+}
 
-/* ---------------------- */
-/* MAIN */
-/* ---------------------- */
+/* Menu */
+.menu {
+  /* border: 1px solid red; */
+  /* height: 100px; */
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
 
-/* ---------*/
-/* Navigation */
-/* -------*/
+.menu a {
+  display: block;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: calc((100% - 50px) / 6);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
 
-/* ---------*/
-/* Pictures */
-/* -------*/
+.menu a:hover {
+  background-color: black;
+  color: white;
+}
 
-/* ---------*/
+/* Image Blocs */
+.imagesBloc {
+  /* border: 1px solid black; */
+  height: 430px;
+  display: flex;
+  gap: 2px;
+}
+
+.imagesBloc .col1 {
+  /* background-color: blue; */
+  height: 100%;
+  flex: 1;
+}
+
+.imagesBloc .col2 {
+  /* background-color: green; */
+  height: 100%;
+  width: 480px;
+}
+
+.imagesBloc img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imagesBloc .col2 div {
+  width: 100%;
+  height: 50%;
+}
+
+.imagesBloc .col2 div:first-child {
+  /* margin-bottom: 2px; */
+  padding-bottom: 2px;
+}
+
 /* Location */
-/* -------*/
+.location {
+  font-size: 12px;
+  color: grey;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
 
-/* ---------*/
-/* Information */
-/* -------*/
+.breadcrumbs i {
+  margin: 0 3px;
+  font-size: 8px;
+}
 
-/* About Text */
+.breadcrumbs:hover {
+  text-decoration: underline;
+}
 
-/* Start Journey */
+/* Pitch */
+.pitch {
+  display: flex;
+  margin-bottom: 40px;
+  /* height: 400px; */
+}
 
-/* ---------------------- */
-/* FOOTER */
-/* ---------------------- */
+.information {
+  /* border: 1px solid black; */
+  flex: 1;
+}
+
+.callToAction {
+  /* border: 1px solid black; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.information p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333333;
+  line-height: 22px;
+}
+
+.box {
+  /* border: 1px solid black; */
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-top {
+  /* border: 1px solid black; */
+  background-color: #fe5d5d;
+  border-radius: 10px 10px 0px 0;
+  padding: 15px;
+}
+
+.box-top h3 {
+  margin-bottom: 10px;
+  line-height: 35px;
+}
+
+.box-top p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.box-top button {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: black;
+  color: white;
+  padding: 14px 12px;
+  border-radius: 15px;
+  border: none;
+  margin: 10px 0;
+}
+
+.box-top button:hover {
+  cursor: pointer;
+  flex: 2;
+}
+
+.box-bottom {
+  /* border: 1px solid black; */
+  border-radius: 0px 0px 10px 10px;
+  flex: 1;
+}
+
+.box-bottom img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* Unmissables */
+.unmissables h2 {
+  margin-bottom: 24px;
+}
+
+.se-divertir {
+  /* border: 1px solid black; */
+  height: 300px;
+  display: flex;
+}
+
+.text {
+  border: 1px solid black;
+  height: 300px;
+  flex: 1;
+  padding-right: 20px;
+}
+
+.text p {
+  margin: 20px 0px;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333333;
+  line-height: 22px;
+}
+
+.text span {
+  color: #333333;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.text span:hover {
+  color: #333333;
+}
+
+.carrousel {
+  border: 1px solid black;
+  height: 300px;
+  flex: 3;
+}
