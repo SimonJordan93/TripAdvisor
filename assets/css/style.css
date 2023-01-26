@@ -286,17 +286,16 @@ h1 + p {
 
 /* Text */
 
-.se-divertir {
-  border: 1px solid black;
+.activities {
+  /* border: 1px solid black; */
   height: 300px;
   display: flex;
+  margin-bottom: 100px;
 }
 
 .text {
-  /* border: 1px solid black; */
-  height: 300px;
-  flex: 1;
-  padding-right: 20px;
+  /* width: 300px; */
+  aspect-ratio: 1;
 }
 
 .text p {
@@ -305,6 +304,7 @@ h1 + p {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #333333;
   line-height: 22px;
+  width: 80%;
 }
 
 .text span {
@@ -320,17 +320,28 @@ h1 + p {
 /* Carrousel */
 
 .carrousel-item {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   gap: 15px;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carrousel-item::-webkit-scrollbar {
+  display: none;
+}
+
+.carrousel-item {
+  overflow-x: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .carrousel-item a {
   display: block;
-  border: 1px solid rgb(134, 46, 46);
+  /* border: 1px solid rgb(134, 46, 46); */
   height: 300px;
   width: 264px;
-  /* flex: 1; */
 
   flex-shrink: 0;
 }
@@ -345,7 +356,7 @@ h1 + p {
 }
 
 .scroll-pic {
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
   height: 200px;
   margin-bottom: 10px;
   position: relative;
