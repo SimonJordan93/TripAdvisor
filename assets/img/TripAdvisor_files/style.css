@@ -287,7 +287,7 @@ h1 + p {
 /* Text */
 
 .se-divertir {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 300px;
   display: flex;
 }
@@ -321,6 +321,8 @@ h1 + p {
 
 .carrousel-item {
   border: 1px solid black;
+  height: 300px;
+  flex: 3;
   display: flex;
   gap: 15px;
 }
@@ -328,11 +330,7 @@ h1 + p {
 .carrousel-item a {
   display: block;
   border: 1px solid rgb(134, 46, 46);
-  height: 300px;
-  width: 264px;
-  /* flex: 1; */
-
-  flex-shrink: 0;
+  flex: 1;
 }
 
 .carrousel-item a:hover {
@@ -345,7 +343,7 @@ h1 + p {
 }
 
 .scroll-pic {
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
   height: 200px;
   margin-bottom: 10px;
   position: relative;
